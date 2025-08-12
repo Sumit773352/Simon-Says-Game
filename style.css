@@ -21,8 +21,18 @@ body::before {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    filter: blur(70px);
+    filter: blur(50px);
     z-index: -1;
+}
+
+#game-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.6);
 }
 h1{
     color: rgb(132, 4, 4);
@@ -63,4 +73,49 @@ h1{
 
 .userflash{
     background-color: green;
+}
+
+#instructions-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+
+#instructions-screen h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#instructions-screen p {
+    display: flex;
+    align-items: flex-start;
+    max-width: 500px;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+#start-btn {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background-color: #63aac0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#start-btn:hover {
+    background-color: #4b8da1;
 }

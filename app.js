@@ -1,3 +1,8 @@
+document.getElementById("start-btn").addEventListener("click", function () {
+    document.getElementById("instructions-screen").style.display = "none";
+    document.getElementById("game-screen").style.display = "block";
+});
+
 let gameSeq = [];
 let userSeq = [];
 let btns = ["yellow", "red", "purple", "green"];

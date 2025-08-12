@@ -7,6 +7,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="instructions-screen">
+    <h1>Welcome to Simon Says!</h1>
+    <p>
+        <h3>Instructions:</h3>
+        <br><br>
+        <div class="Instructions"><ul>
+                <li>In this game, the computer will light up a sequence of buttons.</li>
+                <li>Repeat the sequence exactly in the same order.</li>
+                <li>After each round, the computer will add one more button to the sequence.</li>
+                <li>This means you must remember all the previous buttons and the new one it adds.</li>
+            </ul>
+        </div>
+        
+          
+        <br><br>
+        Example:  
+        <br>Round 1 → Yellow(new)  
+        <br>Round 2 → Yellow(old), Red(new) 
+        <br>Round 3 → Yellow(old), Red(old), Green(new)  
+        <br>...and so on.  
+        <br><br>
+        If you click the wrong button, the game ends!
+    </p>
+    <button id="start-btn">Play Game</button>
+</div>
+
+<div id="game-screen" style="display:none;">
     <h1>Simon Says Game</h1>
     <h2>Press any key to start</h2>
     <p id="high-score">Highest Score: 0</p>
@@ -21,6 +48,8 @@
             <div class="btn purple" type=" button" id = "purple">4</div>
         </div>
     </div>
+</div>
+    
     <script src="app.js"></script>
 </body>
 </html>
